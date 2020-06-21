@@ -1,0 +1,97 @@
+\ProvidesPackage{preamble}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages
+
+% AMS
+\usepackage{amsmath, amssymb, amsthm, amsbsy}
+% Geometry
+\usepackage[margin=1in]{geometry}
+% Colors
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{lightorange}{HTML}{E69F00}
+\definecolor{lightblue}{HTML}{56B4E9}
+\definecolor{deeporange}{HTML}{D55E00}
+\definecolor{deepblue}{HTML}{0072B2}
+
+
+% Figures
+\usepackage{graphicx}
+\usepackage{float}
+% Figures
+\usepackage{graphicx}
+\usepackage{float}
+% Multi column lists
+\usepackage{multicol}
+% Inline lists
+\usepackage{paralist}
+\usepackage{enumitem}
+% Subfigures
+\usepackage{caption}
+\usepackage{subcaption}
+% Caligraphic
+\usepackage{mathrsfs}
+\usepackage{bbm}
+% Bold
+\usepackage{bm}
+% algos
+\usepackage[linesnumbered, lined, ruled]{algorithm2e}
+% Spacing
+\usepackage{setspace}
+% Indentation
+\usepackage{scrextend}
+% Icons
+\usepackage{fontawesome}
+
+% General Prettiness
+\usepackage{microtype}
+\usepackage{lastpage}
+
+% Refs
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks  = true,
+  allcolors   = deepblue  
+}
+
+% Indent
+\usepackage{indentfirst}
+% Pretty lists
+\usepackage{enumitem}
+\setlist[enumerate]{itemsep=2pt,topsep=3pt}
+\setlist[itemize]{itemsep=2pt,topsep=3pt}
+\setlist[enumerate,1]{label=(\roman*)}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Document Settings
+
+% Figure path (default: figures folder in same folder as tex document)
+\graphicspath{{../figures/}}
+% Matrix columns
+\setcounter{MaxMatrixCols}{10}
+% So pages will break inside long equation environments
+\allowdisplaybreaks
+\linespread{1.05}
+
+% Font
+\usepackage{PlayfairDisplay}
+\usepackage[T1]{fontenc}
+
+% Geometry
+\geometry{left=1in,right=1in,top=1in,bottom=1in}
+% Counters
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{3}
+
+\setlength{\headheight}{40pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+\setlength{\marginparwidth}{2cm}
+
+% Date tables
+\newlength{\datecolumn}
+\setlength{\datecolumn}{1.25cm}
+
+\newlength{\spancolumn}
+\setlength{\spancolumn}{1.9cm}
