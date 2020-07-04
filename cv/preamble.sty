@@ -40,7 +40,8 @@
 % Indentation
 \usepackage{scrextend}
 % Icons
-\usepackage{fontawesome}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
 
 % General Prettiness
 \usepackage{microtype}
@@ -50,7 +51,7 @@
 \usepackage{hyperref}
 \hypersetup{
   colorlinks  = true,
-  allcolors   = deepblue  
+  allcolors   = deepblue
 }
 
 % Indent
@@ -75,8 +76,19 @@
 \linespread{1.05}
 
 % Font
-\usepackage{PlayfairDisplay}
-\usepackage[T1]{fontenc}
+% Set sans serif font
+\setsansfont{Lato}
+\newfontfamily\latofont{Lato}
+% Set serifed font
+\renewcommand\bfdefault{sb}
+\setmainfont{Lora}
+\newfontfamily\lorafont{Lora}
+
+% Section titling
+\usepackage{titlesec}
+\newfontfamily\sectionfont{Playfair Display}
+\titleformat*{\section}{\large \sectionfont}
+\titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
 
 % Geometry
 \geometry{left=1in,right=1in,top=1in,bottom=1in}
@@ -95,3 +107,5 @@
 
 \newlength{\spancolumn}
 \setlength{\spancolumn}{1.9cm}
+
+\newcommand{\shortrow}{& \\[-1.75ex]}

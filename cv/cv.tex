@@ -5,23 +5,30 @@
 \begin{document}
 
 \begin{center}
-{
+{ \sectionfont
   { \huge Advik Shreekumar } \\
   \vspace{0.3cm}
-  { \large Curriculum Vitae }
+  { \large Curriculum Vitae } \\
+  \today
 }
 \end{center}
 
 % Contact
 \begin{center}
-\faEnvelopeO \, \href{mailto:adviks@mit.edu}{adviks@mit.edu} \quad
-\faGithub    \, \href{https://github.com/adviksh}{https://github.com/adviksh} \quad
-\faTwitter   \, \href{https://twitter.com/AdvikSh}{https://twitter.com/adviksh}
+{
+  \latofont
+  \faEnvelope \, \href{mailto:adviks@mit.edu}{adviks@mit.edu}
+  \quad
+  \faGithub   \, \href{https://github.com/adviksh}{https://github.com/adviksh}
+  \quad
+  \faTwitter  \, \href{https://twitter.com/AdvikSh}{https://twitter.com/adviksh}
+}
 \end{center}
 
 % Table of Contents
 \begin{center}
 {
+  \sectionfont
   \hyperref[sec:education]{Education} \quad
   \hyperref[sec:working_papers]{Working Papers} \quad
   \hyperref[sec:research_grants]{Research Grants} \quad
@@ -54,7 +61,7 @@ Thesis: Gaussian process and hidden Markov models for student absences in a larg
 \section*{Working Papers}
 \label{sec:working_papers}
 \begin{enumerate}[label=\arabic*.]
-\item \textbf{When Guidance Changes: Public Inference from Crisis Policy}, with Charlie Rafkin and Pierre-Luc Vautrey. [\href{https://www.dropbox.com/work/Public%20COVID?preview=rsv_covid_changing.pdf}{Link}]
+\item \href{https://www.dropbox.com/work/Public%20COVID?preview=rsv_covid_changing.pdf}{{When Guidance Changes: Public Inference from Crisis Policy}}, with Charlie Rafkin and Pierre-Luc Vautrey.
 
 % When official public guidance changes, how do people update their beliefs? Using an online experiment with 1,902 US respondents, we study how people make inferences in response to changing government positions in the context of the 2020 coronavirus (COVID) pandemic. We present all participants with the latest official projection about death counts but randomize exposure to information that makes salient whether the government response to COVID was consistent or changing. We find that the changing treatment reduces the magnitude of incentivized belief updates and also reduces self-reported beliefs about the government's credibility. These results are consistent with a simple political economy model in which people are uncertain about the severity of the crisis and the quality of the government's information. Our work has applications to changing official guidance outside crises, e.g. in the context of public-health information about diet or cancer screening.
 
@@ -65,8 +72,10 @@ Thesis: Gaussian process and hidden Markov models for student absences in a larg
 \begin{tabular}{p{\datecolumn} l}
 2020 & Russell Sage Foundation Small Grant in Computational Social Sciences \\
      & \textcolor{gray}{with Charlie Rafkin and Pierre-Luc Vautrey} \\
+\shortrow
 2020 & George and Obie Shultz Fund at MIT \\
      & \textcolor{gray}{with Charlie Rafkin and Pierre-Luc Vautrey} \\
+\shortrow
 2013 & Program for Research in Science and Engineering
 \end{tabular}
 
@@ -75,26 +84,32 @@ Thesis: Gaussian process and hidden Markov models for student absences in a larg
 \begin{tabular}{p{\spancolumn} l}
 2018-19 & Profs. Sendhil Mullainathan, Jens Ludwig, and Jann Spiess \\
         & \textcolor{gray}{A machine learning approach for multiple hypothesis testing.} \\
+\shortrow
 2018-19 & Profs. Sendhil Mullainathan and Ziad Obermeyer \\
         & \textcolor{gray}{Behavioral biases in emergency room physician decisions.} \\
+\shortrow
 2015    & John Ternovski and Prof. Todd Rogers \\
         & \textcolor{gray}{Familial trends in student absences.} \\
+\shortrow
 2013    & Dr. Se Hoon Choi and Prof. Rudolph Tanzi \\
-        & \textcolor{gray}{Antibiotic properties of the Alzheimer's-linked amyloid $\beta$ protein.}
+        & \textcolor{gray}{Antibiotic properties of the Alzheimer's-linked amyloid $\beta$ protein.} \\
 \end{tabular}
 
 \section*{Teaching}
 \label{sec:teaching}
 \begin{tabular}{p{\datecolumn} l}
 2016 & Stat 111: Introduction to Theoretical Statistics \\
-     & \textcolor{gray}{Derek Bok Certificate of Distinction in Teaching for Teaching Assistants} \\
-     & \textcolor{gray}{Section, office hours, grading} \\
+     & \textcolor{gray}{Teaching Assistant: section, office hours, grading} \\
+     & \textcolor{gray}{Derek Bok Certificate of Distinction in Teaching} \\
+\shortrow
 2015 & Stat 110: Introduction to Probability \\
      & \textcolor{gray}{Group tutoring} \\
+\shortrow
 2015 & Stat 111: Introduction to Theoretical Statistics \\
-     & \textcolor{gray}{Office hours, grading} \\
+     & \textcolor{gray}{Course Assistant: office hours, grading} \\
+\shortrow
 2014 & Stat 110: Introduction to Probability \\
-     & \textcolor{gray}{Tutoring} \\
+     & \textcolor{gray}{Tutoring}
 \end{tabular}
 
 \section*{Academic Honors}
@@ -112,10 +127,12 @@ Thesis: Gaussian process and hidden Markov models for student absences in a larg
 [\href{http://www.ebmcdn.net/prb/iframe-video-viewer.php?viewnode=acs-may17/acs-051117-south-6}{Link}] \\
 & \textcolor{gray}{ACS Data Users Conference, Washington, DC} \\
 & \textcolor{gray}{with Ola Topczewska and Kelly Kreft} \\
+& \\[-1.5ex]
 2017 & Using Data to Close the SNAP and EITC Participation Gap in NYC
 [\href{https://www.youtube.com/watch?v=XSQOCXwNqUA6}{Link}] \\
 & \textcolor{gray}{ChiHackNight, Chicago, IL} \\
 & \textcolor{gray}{with Ola Topczewska and Kelly Kreft} \\
+& \\[-1.5ex]
 2017 & Fighting Poverty with Data Science \\
 & \textcolor{gray}{Princeton University Data@ Series, Princeton, NJ} \\
 & \textcolor{gray}{with Scarlett Swerdlow} \\
@@ -124,7 +141,7 @@ Thesis: Gaussian process and hidden Markov models for student absences in a larg
 \section*{Industry Experience}
 \label{sec:industry_experience}
 \begin{tabular}{p{\spancolumn} l}
-2016\textendash 2018 & Applied Data Scientist, Civis Analytics
+2016\textendash18 & Applied Data Scientist, Civis Analytics
 \end{tabular}
 
 \section*{Skills}
