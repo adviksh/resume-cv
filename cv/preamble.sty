@@ -12,6 +12,7 @@
 \definecolor{lightblue}{HTML}{56B4E9}
 \definecolor{deeporange}{HTML}{D55E00}
 \definecolor{deepblue}{HTML}{0072B2}
+\definecolor{darkgrey}{HTML}{555555}
 
 
 % Figures
@@ -37,6 +38,7 @@
 \usepackage[linesnumbered, lined, ruled]{algorithm2e}
 % Spacing
 \usepackage{setspace}
+\singlespacing
 % Indentation
 \usepackage{scrextend}
 % Icons
@@ -48,8 +50,8 @@
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\lfoot{{\footnotesize \textcolor{gray}{Updated: \today.}}}
-\rfoot{{\footnotesize \textcolor{gray}{Source code available at \url{https://github.com/adviksh/resume-cv}.}}}
+\lfoot{{\footnotesize \textcolor{darkgrey}{Updated: \today.}}}
+\rfoot{{\footnotesize \textcolor{darkgrey}{Source code available at: \url{https://github.com/adviksh/resume-cv}.}}}
 
 % General Prettiness
 \usepackage{microtype}
@@ -106,14 +108,11 @@
 
 \setlength{\headheight}{40pt}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.5em}
+\setlength{\parskip}{0.2em}
 \setlength{\marginparwidth}{2cm}
 
 % Date tables
 \newlength{\datecolumn}
-\setlength{\datecolumn}{1.25cm}
+\setlength{\datecolumn}{1.7cm}
 
-\newlength{\spancolumn}
-\setlength{\spancolumn}{1.9cm}
-
-\newcommand{\shortrow}{& \\[-1.75ex]}
+\newcommand{\shortrow}{& \\[-2ex]}
