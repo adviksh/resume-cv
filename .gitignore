@@ -13,6 +13,7 @@
 .*.lb
 *.synctex.gz
 *.fdb_latexmk
+*.xdv
 
 # DS Store Files
 .DS_Store
